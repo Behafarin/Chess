@@ -4,9 +4,8 @@ import javafx.application.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.stage.Stage;
+import java.lang.Math.*;
 import javafx.stage.*;
-import org.codehaus.groovy.runtime.dgmimpl.arrays.ObjectArrayPutAtMetaMethod;
-
 public class Main extends Application {
 
     @Override
@@ -20,6 +19,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+
         launch(args);
     }
 }
