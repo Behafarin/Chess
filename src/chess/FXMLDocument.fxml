@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="78.0" layoutY="26.0">
+         <children>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/knight_white_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bishop_white_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="388.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rock_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="453.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bishop_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="129.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="129.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="259.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="194.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="326.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/main-qimg-d4c28a1104f24d4d33fe8a3e55f9c646-c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn5" fitHeight="65.0" fitWidth="80.0" layoutX="260.0" onMouseClicked="#onBtn5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/King_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn6" fitHeight="65.0" fitWidth="80.0" layoutX="325.0" onMouseClicked="#onBtn6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bishop_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/images/pawn_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn4" fitHeight="65.0" fitWidth="80.0" layoutX="195.0" onMouseClicked="#onBtn4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Queen_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/king_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/knight_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/images/pawn_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn2" fitHeight="65.0" fitWidth="80.0" layoutX="65.0" onMouseClicked="#onBtn2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/knight_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="454.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/main-qimg-d4c28a1104f24d4d33fe8a3e55f9c646-c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/queen_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn8" fitHeight="65.0" fitWidth="80.0" layoutX="455.0" onMouseClicked="#onBtn8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rock_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="66.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/main-qimg-d4c28a1104f24d4d33fe8a3e55f9c646-c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn3" fitHeight="65.0" fitWidth="80.0" layoutX="130.0" onMouseClicked="#onBtn3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/bishop_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="196.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/main-qimg-d4c28a1104f24d4d33fe8a3e55f9c646-c.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="324.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn1" fitHeight="65.0" fitWidth="80.0" onMouseClicked="#onBtn1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rock_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rock_white_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_black.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="label" fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/images/pawn_white_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn7" fitHeight="65.0" fitWidth="80.0" layoutX="390.0" onMouseClicked="#onBtn7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/knight_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pawn_black_white.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/black_house.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/white_house.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
