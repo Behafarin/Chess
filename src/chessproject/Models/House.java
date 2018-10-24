@@ -3,15 +3,20 @@ package chessproject.Models;
 import javax.swing.text.html.ImageView;
 
 public class House {
-    private int i,j;
-    private Piece piece;
-    private ImageView imageView;
-
-    public House(int i, int j) {
+    public int i,j;
+    public Piece piece = null;
+    public ImageView imageView = null;
+    public int index;
+    public int color;
+    public House(int index, int i, int j) {
         this.i = i;
         this.j = j;
-        this.piece = null;
+        this.index = index;
+        if((i+j)%2 == 0){
+            this.color = 0;
+        }else{
+            this.color = 1;
+        }
     }
-    
     
 }

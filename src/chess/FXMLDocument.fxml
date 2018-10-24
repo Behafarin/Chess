@@ -9,8 +9,13 @@
 
 <AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.FXMLDocumentController">
    <children>
-      <AnchorPane layoutX="78.0" layoutY="26.0">
+      <AnchorPane layoutX="78.0" layoutY="52.0">
          <children>
+            <ImageView fitHeight="520.0" fitWidth="535.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Capture.PNG" />
+               </image>
+            </ImageView>
             <ImageView fx:id="btn63" fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="455.0" onMouseClicked="#onBtn63" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/knight_white_black.jpg" />
@@ -26,11 +31,7 @@
                   <Image url="@../images/bishop_white_black.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn20" fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="130.0" onMouseClicked="#onBtn20" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/black_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn20" fitHeight="65.0" fitWidth="65.0" layoutX="195.0" layoutY="130.0" onMouseClicked="#onBtn20" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn16" fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="65.0" onMouseClicked="#onBtn16" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/pawn_black_white.jpg" />
@@ -56,11 +57,7 @@
                   <Image url="@../images/bishop_white_white.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn19" fitHeight="65.0" fitWidth="80.0" layoutX="129.0" layoutY="130.0" onMouseClicked="#onBtn19" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/white_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn19" fitHeight="65.0" fitWidth="65.0" layoutX="129.0" layoutY="130.0" onMouseClicked="#onBtn19" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn34" fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="260.0" onMouseClicked="#onBtn34" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/black_house.jpg" />
@@ -91,11 +88,7 @@
                   <Image url="@../images/pawn_black_black.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn22" fitHeight="65.0" fitWidth="80.0" layoutX="325.0" layoutY="130.0" onMouseClicked="#onBtn22" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/black_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn22" fitHeight="65.0" fitWidth="65.0" layoutX="325.0" layoutY="130.0" onMouseClicked="#onBtn22" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn47" fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="325.0" onMouseClicked="#onBtn47" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/black_house.jpg" />
@@ -216,11 +209,7 @@
                   <Image url="@../images/rock_black_black.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn17" fitHeight="65.0" fitWidth="80.0" layoutY="130.0" onMouseClicked="#onBtn17" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/white_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn17" fitHeight="65.0" fitWidth="65.0" layoutY="130.0" onMouseClicked="#onBtn17" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn36" fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="260.0" onMouseClicked="#onBtn36" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/black_house.jpg" />
@@ -241,16 +230,8 @@
                   <Image url="@../images/pawn_white_black.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn23" fitHeight="65.0" fitWidth="80.0" layoutX="390.0" layoutY="130.0" onMouseClicked="#onBtn23" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/white_house.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="btn18" fitHeight="65.0" fitWidth="80.0" layoutX="65.0" layoutY="130.0" onMouseClicked="#onBtn18" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/black_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn23" fitHeight="65.0" fitWidth="65.0" layoutX="390.0" layoutY="130.0" onMouseClicked="#onBtn23" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="btn18" fitHeight="65.0" fitWidth="65.0" layoutX="65.0" layoutY="130.0" onMouseClicked="#onBtn18" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn13" fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="65.0" onMouseClicked="#onBtn13" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/pawn_black_black.jpg" />
@@ -316,16 +297,8 @@
                   <Image url="@../images/pawn_black_white.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="btn21" fitHeight="65.0" fitWidth="80.0" layoutX="260.0" layoutY="130.0" onMouseClicked="#onBtn21" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/white_house.jpg" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="btn24" fitHeight="65.0" fitWidth="80.0" layoutX="455.0" layoutY="130.0" onMouseClicked="#onBtn24" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/black_house.jpg" />
-               </image>
-            </ImageView>
+            <ImageView fx:id="btn21" fitHeight="65.0" fitWidth="65.0" layoutX="260.0" layoutY="130.0" onMouseClicked="#onBtn21" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="btn24" fitHeight="65.0" fitWidth="65.0" layoutX="455.0" layoutY="130.0" onMouseClicked="#onBtn24" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="btn35" fitHeight="65.0" fitWidth="80.0" layoutX="130.0" layoutY="260.0" onMouseClicked="#onBtn35" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/white_house.jpg" />

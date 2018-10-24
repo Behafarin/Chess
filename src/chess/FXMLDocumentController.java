@@ -35,6 +35,49 @@ import chessproject.Models.*;
 public class FXMLDocumentController implements Initializable {
  
     public static Stage mystage;
+    static House[]
+    houses = {null,new House(1,1,1),new House(2,1,2),new House(3,1,3),new House(4,1,4),
+    new House(5,1,5),new House(6,1,6),new House(7,1,7),new House(8,1,8),new House(9,2,1),
+    new House(10,2,2),new House(11,2,3),new House(12,2,4),new House(13,2,5),new House(14,2,6),
+    new House(15,2,7),new House(16,2,8),new House(17,3,1),new House(18,3,2),new House(19,3,3),
+    new House(20,3,4),new House(21,3,5),new House(22,3,6),new House(23,3,7),new House(24,3,8),
+    new House(25,4,1),new House(26,4,2),new House(27,4,3),new House(28,4,4),new House(29,4,5),
+    new House(30,4,6),new House(31,4,7),new House(32,4,8),new House(33,5,1),new House(34,5,2),
+    new House(35,5,3),new House(36,5,4),new House(37,5,5),new House(38,5,6),new House(39,5,7),
+    new House(40,5,8),new House(41,6,1),new House(42,6,2),new House(43,6,3),new House(44,6,4),
+    new House(45,6,5),new House(46,6,6),new House(47,6,7),new House(48,6,8),new House(49,7,1),
+    new House(50,7,2),new House(51,7,3),new House(52,7,4),new House(53,7,5),new House(54,7,6),
+    new House(55,7,7),new House(56,7,8),new House(57,8,1),new House(58,8,2),new House(59,8,3),
+    new House(60,8,4),new House(61,8,5),new House(62,8,6),new House(63,8,7),new House(64,8,8),
+    };
+//    images = {
+//    }
+    private static String [] backs = new String[]{"white_house.jpg","black_house.jpg"};
+    private static Player [] players = new Player[]{new Player(),new Player()};
+    private static int turn = 0;
+    private String[][][]
+    images = {{{"pawn_white_white.jpg","pawn_white_black.jpg"},
+        {"pawn_black_white.jpg","pawn_black_black.jpg"}},{{"knight_white_white.jpg","knight_white_black.jpg"},
+        {"knight_black_white.jpg","knight_black_black.jpg"}},{{"bishop_white_white.jpg","bishop_white_black.jpg"},
+        {"bishop_black_white.jpg","bishop_black_black.jpg"}},{{"rock_white_white.jpg","rock_white_black.jpg"},
+        {"rock_black_white.jpg","rock_black_black.jpg"}},{{"Queen_white_white.jpg","Queen_white_black.jpg"},
+        {"Queen_black_white.jpg","Queen_black_black.jpg"}},{{"King_white_white.jpg","King_white_black.jpg"},
+        {"King_black_white.jpg","King_black_black.jpg"}}};
+    
+//    public static boolean isCheck(){}
+//    public static boolean CanCheckRemoved(){}
+//    public static boolean Origin_Destination_Check(){}
+//    public static boolean hasMated(){}
+//    public static boolean isAchsen(){}
+//    public static boolean canRivalMove(//    public static boolean isAchsen(){}
+//    public static boolean canRival){}
+//    public static void whichAreAchsen(){}
+//    public static void changePlayer(){}
+    static ArrayList<Piece> player1_pieces = new ArrayList<>();
+    static ArrayList<Piece> player2_pieces = new ArrayList<>();
+    
+    
+    
     @FXML
     private ImageView btn5;
     @FXML
@@ -169,19 +212,10 @@ public class FXMLDocumentController implements Initializable {
         // TODO
     }    
     
-//    public static boolean isCheck(){}
-//    public static boolean CanCheckRemoved(){}
-//    public static boolean Origin_Destination_Check(){}
-//    public static boolean hasMated(){}
-//    public static boolean isAchsen(){}
-//    public static boolean canRivalMove(){}
-//    public static void whichAreAchsen(){}
-//    public static void changePlayer(){}
-    ArrayList<Piece> pieces = new ArrayList<>();
-    Piece p = new King();
     
     @FXML
     private void onBtn5(MouseEvent event) {
+        
     }
 
     @FXML
@@ -435,9 +469,21 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void onBtn35(MouseEvent event) {
+        procces(houses[35]);
     }
     
- 
+    private static void procces(House house){
+        if (players[turn].ChosenPiece == null) {
+            if (house.piece != null ) {
+                
+            }
+            
+        }else {
+            
+            
+        }
+        
+    }
  
     
 }
