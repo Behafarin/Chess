@@ -108,7 +108,7 @@ public class Pawn extends Piece {
             destination.piece = origin.piece;
             origin.piece = null;
             initial = 0;
-            System.out.println("des:i:" + destination.i + ",j:" + destination.j);
+            System.out.println("des:i:"+destination.i+",j:"+destination.j);
             if (FXMLDocumentController.turn % 2 == 1) {
                 if (destination.i == 8) {
                     FXMLDocumentController.player2_pieces.remove(destination.piece);
