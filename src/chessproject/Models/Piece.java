@@ -1,8 +1,9 @@
 package chessproject.Models;
-import javax.swing.text.html.ImageView;
+
+import javafx.scene.image.ImageView;
 
 
-public class Piece {
+public abstract class Piece {
     public enum color {white,black};
     public int i,j;
     public boolean isChosen = false;
@@ -11,13 +12,16 @@ public class Piece {
     public boolean isAchsen = false;
     public ImageView image;
     public Player owner;
-
-    public Piece(int i, int j, Player owner, ImageView image) {
+    public House house;
+    public Piece(int i, int j, Player owner, ImageView image,House house) {
         this.i = i;
         this.j = j;
         this.owner = owner;
         this.image = image;
+        this.house = house;
     }
+    
+    public abstract void Move(House origin,House destination);
     
     
 }

@@ -1,10 +1,11 @@
 package chessproject.Models;
-import javax.swing.text.html.ImageView;
 
-public class Bishop extends Piece implements P{
+import javafx.scene.image.ImageView;
 
-    public Bishop(int i, int j,Player owner, ImageView image) {
-        super(i, j,owner, image);
+public class Bishop extends Piece {
+
+    public Bishop(int i, int j,Player owner, ImageView image,House house) {
+        super(i, j,owner, image,house);
         this.index = 2;
     }
 

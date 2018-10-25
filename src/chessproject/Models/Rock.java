@@ -1,15 +1,18 @@
 package chessproject.Models;
 
-import javax.swing.text.html.ImageView;
+import javafx.scene.image.ImageView;
 
-public class Rock extends Piece implements P{
+
+public class Rock extends Piece{
     public final int index = 3;
 
-    public Rock(int i, int j,Player owner ,ImageView image) {
-        super(i, j,owner, image);
+    public Rock(int i, int j,Player owner ,ImageView image,House house) {
+        super(i, j,owner, image,house);
     }
+
     @Override
-    public void Move() {
+    public void Move(House origin, House destination) {
         
     }
+
 }

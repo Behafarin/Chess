@@ -196,7 +196,7 @@
             </ImageView>
             <ImageView fx:id="btn60" fitHeight="65.0" fitWidth="80.0" layoutX="195.0" layoutY="455.0" onMouseClicked="#onBtn60" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/queen_white_white.jpg" />
+                  <Image url="@../images/Queen_white_white.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="btn41" fitHeight="65.0" fitWidth="80.0" layoutY="325.0" onMouseClicked="#onBtn41" pickOnBounds="true" preserveRatio="true">
