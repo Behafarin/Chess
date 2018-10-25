@@ -13,42 +13,39 @@ import javafx.stage.Stage;
 import chessproject.Models.*;
 
 public class FXMLDocumentController implements Initializable {
- 
+
     public static Stage mystage;
-    public static House[]
-    houses = {null,new House(1,1,1),new House(2,1,2),new House(3,1,3),new House(4,1,4),
-    new House(5,1,5),new House(6,1,6),new House(7,1,7),new House(8,1,8),new House(9,2,1),
-    new House(10,2,2),new House(11,2,3),new House(12,2,4),new House(13,2,5),new House(14,2,6),
-    new House(15,2,7),new House(16,2,8),new House(17,3,1),new House(18,3,2),new House(19,3,3),
-    new House(20,3,4),new House(21,3,5),new House(22,3,6),new House(23,3,7),new House(24,3,8),
-    new House(25,4,1),new House(26,4,2),new House(27,4,3),new House(28,4,4),new House(29,4,5),
-    new House(30,4,6),new House(31,4,7),new House(32,4,8),new House(33,5,1),new House(34,5,2),
-    new House(35,5,3),new House(36,5,4),new House(37,5,5),new House(38,5,6),new House(39,5,7),
-    new House(40,5,8),new House(41,6,1),new House(42,6,2),new House(43,6,3),new House(44,6,4),
-    new House(45,6,5),new House(46,6,6),new House(47,6,7),new House(48,6,8),new House(49,7,1),
-    new House(50,7,2),new House(51,7,3),new House(52,7,4),new House(53,7,5),new House(54,7,6),
-    new House(55,7,7),new House(56,7,8),new House(57,8,1),new House(58,8,2),new House(59,8,3),
-    new House(60,8,4),new House(61,8,5),new House(62,8,6),new House(63,8,7),new House(64,8,8),
-    };
+    public static House[] houses = {null, new House(1, 1, 1), new House(2, 1, 2), new House(3, 1, 3), new House(4, 1, 4),
+        new House(5, 1, 5), new House(6, 1, 6), new House(7, 1, 7), new House(8, 1, 8), new House(9, 2, 1),
+        new House(10, 2, 2), new House(11, 2, 3), new House(12, 2, 4), new House(13, 2, 5), new House(14, 2, 6),
+        new House(15, 2, 7), new House(16, 2, 8), new House(17, 3, 1), new House(18, 3, 2), new House(19, 3, 3),
+        new House(20, 3, 4), new House(21, 3, 5), new House(22, 3, 6), new House(23, 3, 7), new House(24, 3, 8),
+        new House(25, 4, 1), new House(26, 4, 2), new House(27, 4, 3), new House(28, 4, 4), new House(29, 4, 5),
+        new House(30, 4, 6), new House(31, 4, 7), new House(32, 4, 8), new House(33, 5, 1), new House(34, 5, 2),
+        new House(35, 5, 3), new House(36, 5, 4), new House(37, 5, 5), new House(38, 5, 6), new House(39, 5, 7),
+        new House(40, 5, 8), new House(41, 6, 1), new House(42, 6, 2), new House(43, 6, 3), new House(44, 6, 4),
+        new House(45, 6, 5), new House(46, 6, 6), new House(47, 6, 7), new House(48, 6, 8), new House(49, 7, 1),
+        new House(50, 7, 2), new House(51, 7, 3), new House(52, 7, 4), new House(53, 7, 5), new House(54, 7, 6),
+        new House(55, 7, 7), new House(56, 7, 8), new House(57, 8, 1), new House(58, 8, 2), new House(59, 8, 3),
+        new House(60, 8, 4), new House(61, 8, 5), new House(62, 8, 6), new House(63, 8, 7), new House(64, 8, 8),};
 //    images = {
 //    }
-    public static String [] backs = new String[]{"white_house.jpg","black_house.jpg"};
-    public static Player [] players = new Player[]{new Player(),new Player()};
+    public static String[] backs = new String[]{"white_house.jpg", "black_house.jpg"};
+    public static Player[] players = new Player[]{new Player(), new Player()};
     public static int turn = 0;
-    public static String[][][]
-    images = {{{"pawn_white_white.jpg","pawn_white_black.jpg"},
-        {"pawn_black_white.jpg","pawn_black_black.jpg"}},{{"knight_white_white.jpg","knight_white_black.jpg"},
-        {"knight_black_white.jpg","knight_black_black.jpg"}},{{"bishop_white_white.jpg","bishop_white_black.jpg"},
-        {"bishop_black_white.jpg","bishop_black_black.jpg"}},{{"rock_white_white.jpg","rock_white_black.jpg"},
-        {"rock_black_white.jpg","rock_black_black.jpg"}},{{"Queen_white_white.jpg","Queen_white_black.jpg"},
-        {"Queen_black_white.jpg","Queen_black_black.jpg"}},{{"King_white_white.jpg","King_white_black.jpg"},
-        {"King_black_white.jpg","King_black_black.jpg"}}};
-    
+    public static String[][][] images = {{{"pawn_white_white.jpg", "pawn_white_black.jpg"},
+    {"pawn_black_white.jpg", "pawn_black_black.jpg"}}, {{"knight_white_white.jpg", "knight_white_black.jpg"},
+    {"knight_black_white.jpg", "knight_black_black.jpg"}}, {{"bishop_white_white.jpg", "bishop_white_black.jpg"},
+    {"bishop_black_white.jpg", "bishop_black_black.jpg"}}, {{"rock_white_white.jpg", "rock_white_black.jpg"},
+    {"rock_black_white.jpg", "rock_black_black.jpg"}}, {{"Queen_white_white.jpg", "Queen_white_black.jpg"},
+    {"Queen_black_white.jpg", "Queen_black_black.jpg"}}, {{"King_white_white.jpg", "King_white_black.jpg"},
+    {"King_black_white.jpg", "King_black_black.jpg"}}};
+
 //    public static boolean isCheck(){}
 //    public static boolean CanCheckRemoved(){}
 //    public static boolean Origin_Destination_Check(){}
 //    public static boolean hasMated(){}
-    public static boolean isAchsen(Piece piece){
+    public static boolean isAchsen(Piece piece) {
         return false;
     }
 //    public static boolean canRivalMove(//    public static boolean isAchsen(){}
@@ -58,7 +55,7 @@ public class FXMLDocumentController implements Initializable {
     public static ArrayList<Piece> player1_pieces = new ArrayList<>();
     public static ArrayList<Piece> player2_pieces = new ArrayList<>();
     int bar_aval = 0;
-    
+
     @FXML
     private ImageView btn5;
     @FXML
@@ -187,18 +184,17 @@ public class FXMLDocumentController implements Initializable {
     private ImageView btn24;
     @FXML
     private ImageView btn35;
- 
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
-    
+    }
+
     @FXML
     private void onBtn5(MouseEvent event) {
         houses[5].imageView = btn5;
         procces(houses[5]);
-        
+
     }
 
     @FXML
@@ -224,7 +220,6 @@ public class FXMLDocumentController implements Initializable {
         houses[8].imageView = btn8;
         procces(houses[8]);
     }
-
 
     @FXML
     private void onBtn1(MouseEvent event) {
@@ -528,7 +523,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void onBtn57(MouseEvent event) {
-        houses[57].imageView = btn55;
+        houses[57].imageView = btn57;
         procces(houses[57]);
     }
 
@@ -579,87 +574,102 @@ public class FXMLDocumentController implements Initializable {
         houses[35].imageView = btn35;
         procces(houses[35]);
     }
-    
-    private void procces(House house){
+
+    private void procces(House house) {
         System.out.println("Procces");
         if (bar_aval == 0) {
             Initalize();
             bar_aval = 1;
         }
-        if (players[turn%2].ChosenPiece == null) {
-            
-            if (house.piece != null && house.piece.owner == players[turn%2]&&!isAchsen(house.piece)) {
+        if (players[turn % 2].ChosenPiece == null) {
+
+            if (house.piece != null && house.piece.owner == players[turn % 2] && !isAchsen(house.piece)) {
                 System.out.println("Chosen 1 e");
-                players[turn%2].ChosenPiece = house.piece;
-            }else if (house.piece == null) {
+                players[turn % 2].ChosenPiece = house.piece;
+            } else if (house.piece == null) {
                 System.out.println("Chosen 2 e");
-                players[turn%2].ChosenPiece = house.piece;
+                players[turn % 2].ChosenPiece = house.piece;
             }
-            
-        }else {
-           House origin = players[turn%2].ChosenPiece.house;
-           House des = house;
-           System.out.println("Dar Move");
-           origin.piece.Move(origin, des);
+
+        } else {
+            House origin = players[turn % 2].ChosenPiece.house;
+            House des = house;
+            System.out.println("Dar Move");
+            origin.piece.Move(origin, des);
 //           btn37.setImage(new Image(new File("King_black_black.jpg").toURI().toString()));
 //           Image image=new Image(getClass().getResourceAsStream(images[origin.piece.index][turn%2][des.color]));
 //           des.imageView.setImage(image);
 //           System.out.println(turn%2);
 //           origin.
 //                   imageView.setImage(null);
-           
-        }        
+
+        }
     }
-    private void Initalize(){
+
+    private void Initalize() {
         ImageView imageView;
         for (int i = 49; i <= 56; i++) {
-                imageView = new ImageView(new Image(new File(images[0][0][(i+1)%2]).toURI().toString()));
-                Pawn p = new Pawn(2, i, players[0], imageView, houses[i]);
-                houses[i].piece = p;
-                player1_pieces.add(p);
+            imageView = new ImageView(new Image(new File(images[0][0][(i + 1) % 2]).toURI().toString()));
+            Pawn p = new Pawn(2, i, players[0], imageView, houses[i]);
+            houses[i].piece = p;
+            player1_pieces.add(p);
         }
-        Knight k2 = new Knight(8, 7, players[0], new ImageView(new Image(new File(images[1][0][1]).toURI().toString())) , houses[58]);
+        Knight k2 = new Knight(8, 7, players[0], new ImageView(new Image(new File(images[1][0][1]).toURI().toString())), houses[58]);
         player1_pieces.add(k2);
-        
-        k2 = new Knight(8, 2, players[0], new ImageView(new Image(new File(images[1][0][1]).toURI().toString())) , houses[63]);
+        houses[58].piece = k2;
+        k2 = new Knight(8, 2, players[0], new ImageView(new Image(new File(images[1][0][1]).toURI().toString())), houses[63]);
         player1_pieces.add(k2);
-        Rock r2 = new Rock(8, 1, players[0], new ImageView(new Image(new File(images[3][0][0]).toURI().toString())) , houses[64]);
+        houses[63].piece = k2;
+        Rock r2 = new Rock(8, 1, players[0], new ImageView(new Image(new File(images[3][0][0]).toURI().toString())), houses[64]);
         player1_pieces.add(r2);
-        r2 = new Rock(8, 8, players[0], new ImageView(new Image(new File(images[3][1][0]).toURI().toString())) , houses[57]);
+        houses[64].piece = r2;
+        r2 = new Rock(8, 8, players[0], new ImageView(new Image(new File(images[3][1][0]).toURI().toString())), houses[57]);
         player1_pieces.add(r2);
+        houses[57].piece = r2;
         Bishop b2 = new Bishop(8, 3, players[0], new ImageView(new Image(new File(images[2][0][1]).toURI().toString())), houses[59]);
         player1_pieces.add(b2);
+        houses[59].piece = b2;
         b2 = new Bishop(8, 6, players[0], new ImageView(new Image(new File(images[2][0][0]).toURI().toString())), houses[62]);
         player1_pieces.add(b2);
+        houses[62].piece = b2;
         Queen q2 = new Queen(8, 4, players[0], new ImageView(new Image(new File(images[4][0][0]).toURI().toString())), houses[60]);
         player1_pieces.add(q2);
+        houses[60].piece = q2;
         King king2 = new King(8, 5, players[0], new ImageView(new Image(new File(images[5][0][1]).toURI().toString())), houses[61]);
         player1_pieces.add(king2);
-        
+        houses[61].piece = king2;
+
         for (int i = 9; i <= 16; i++) {
-            imageView = new ImageView(new Image(getClass().getResourceAsStream(images[0][1][(i)%2])));
+            imageView = new ImageView(new Image(getClass().getResourceAsStream(images[0][1][(i) % 2])));
             Pawn p = new Pawn(2, i, players[1], imageView, houses[i]);
             houses[i].piece = p;
             player2_pieces.add(p);
 
         }
-        Knight k = new Knight(1, 2, players[1], null , houses[2]);
+        Knight k = new Knight(1, 2, players[1], null, houses[2]);
+        houses[2].piece = k;
         player2_pieces.add(k);
-        k = new Knight(1, 7, players[1],null , houses[7]);
+        k = new Knight(1, 7, players[1], null, houses[7]);
+        houses[7].piece = k;
         player2_pieces.add(k);
-        Rock r = new Rock(1, 1, players[1],null , houses[1]);
+        Rock r = new Rock(1, 1, players[1], null, houses[1]);
         player2_pieces.add(r);
-        r = new Rock(1, 1, players[1], null , houses[8]);
+        houses[1].piece = r;
+        r = new Rock(1, 1, players[1], null, houses[8]);
         player2_pieces.add(r);
+        houses[8].piece = r;
         Bishop b = new Bishop(1, 3, players[1], null, houses[3]);
         player2_pieces.add(b);
-        b = new Bishop(1, 6, players[1],null, houses[6]);
+        houses[3].piece = b;
+        b = new Bishop(1, 6, players[1], null, houses[6]);
         player2_pieces.add(b);
-        Queen q = new Queen(1, 4, players[1],null, houses[4]);
+        houses[6].piece = b;
+        Queen q = new Queen(1, 4, players[1], null, houses[4]);
         player2_pieces.add(q);
-        King king = new King(1, 5, players[1],null, houses[5]);
+        houses[4].piece = q;
+        King king = new King(1, 5, players[1], null, houses[5]);
         player2_pieces.add(king);
-            
+        houses[5].piece = king;
     }
-    
+
 }
