@@ -7,16 +7,16 @@ import javafx.scene.image.ImageView;
 
 public class Pawn extends Piece {
 
-    public final int index = 0;
     public int initial = 1;
 
     public Pawn(int i, int j, Player owner, ImageView image, House house) {
         super(i, j, owner, image, house);
+        this.index = 0; 
     }
 
     @Override
     public void Move(House origin, House destination) {
-        System.err.println("Khob Oomadim!");
+//        System.err.println("Khob Oomadim!");
         if (destination.piece == null && destination.j == origin.j) {
             System.out.println("O_o!");
             if (FXMLDocumentController.turn % 2 == 1) {
@@ -108,7 +108,7 @@ public class Pawn extends Piece {
             destination.piece = origin.piece;
             origin.piece = null;
             initial = 0;
-            System.out.println("des:i:"+destination.i+",j:"+destination.j);
+            System.out.println("des:i:" + destination.i + ",j:" + destination.j);
             if (FXMLDocumentController.turn % 2 == 1) {
                 if (destination.i == 8) {
                     FXMLDocumentController.player2_pieces.remove(destination.piece);
