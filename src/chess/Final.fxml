@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="748.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chess.FinalController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chess.FinalController">
    <children>
       <Label alignment="CENTER" layoutX="239.0" layoutY="61.0" prefHeight="50.0" prefWidth="271.0" text="Finished!!!">
          <font>

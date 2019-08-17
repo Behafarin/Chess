@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="746.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chess.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.FXMLController">
    <children>
       <TextField fx:id="name_txt1" layoutX="261.0" layoutY="217.0" prefHeight="39.0" prefWidth="258.0" promptText="Input your name" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="43.0" prefHeight="51.0" prefWidth="200.0" text="Chess Master">
@@ -20,6 +19,6 @@
       <TextField fx:id="name_txt2" layoutX="261.0" layoutY="305.0" prefHeight="39.0" prefWidth="258.0" promptText="Input your name" />
       <Label layoutX="112.0" layoutY="311.0" text="Player 2 name:" />
       <Button fx:id="StartBtn" layoutX="308.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#onStart" prefHeight="51.0" prefWidth="165.0" text="Start!" />
-      <Button fx:id="exit" layoutX="71.0" layoutY="566.0" mnemonicParsing="false" onMouseClicked="#onExit" prefHeight="39.0" prefWidth="83.0" text="Exit" />
+      <Button fx:id="exit" layoutX="71.0" layoutY="552.0" mnemonicParsing="false" onMouseClicked="#onExit" prefHeight="39.0" prefWidth="83.0" text="Exit" />
    </children>
 </AnchorPane>
