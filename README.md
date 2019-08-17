@@ -23,9 +23,6 @@ Just clone :)
 * Update the README.md with details of changes to the interface and anything else.
 * Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent.
 * Your pull request will be checked and merged(If be verified).
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
