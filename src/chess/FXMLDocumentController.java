@@ -39,7 +39,7 @@ public class FXMLDocumentController implements Initializable {
             {"pawn_black_white.jpg", "pawn_black_black.jpg"}}, {{"knight_white_white.jpg", "knight_white_black.jpg"},
             {"knight_black_white.jpg", "knight_black_black.jpg"}}, {{"bishop_white_white.jpg", "bishop_white_black.jpg"},
             {"bishop_black_white.jpg", "bishop_black_black.jpg"}}, {{"rock_white_white.jpg", "rock_white_black.jpg"},
-            {"rock_black_white.jpg", "rock_black_black.jpg"}}, {{"Queen_white_white.jpg", "Queen_white_black.jpg"},
+            {"rock_black_white.jpg", "rock_black_black.jpg"}}, {{"queen_white_white.jpg", "Queen_white_black.jpg"},
             {"Queen_black_white.jpg", "Queen_black_black.jpg"}}, {{"King_white_white.jpg", "king_white_black.jpg"},
             {"King_black_white.jpg", "King_black_black.jpg"}}};
 

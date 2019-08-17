@@ -14,7 +14,6 @@ public class Chess extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXML.fxml"));
-
         Scene scene = new Scene(root);
         FXMLController.mystage = stage;
         stage.setScene(scene);
