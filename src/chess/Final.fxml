@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="748.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="chess.FinalController">
+   <children>
+      <Label alignment="CENTER" layoutX="239.0" layoutY="61.0" prefHeight="50.0" prefWidth="271.0" text="Finished!!!">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="final_txt" alignment="CENTER" layoutX="243.0" layoutY="254.0" prefHeight="61.0" prefWidth="262.0" text="Label">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
