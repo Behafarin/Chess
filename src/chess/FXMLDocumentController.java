@@ -193,7 +193,7 @@ public class FXMLDocumentController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        Initalize();
     }
 
     @FXML
@@ -582,13 +582,6 @@ public class FXMLDocumentController implements Initializable {
 
     private void process(House house) {
         if (bar_aval == 0) {
-            for (int i = 0; i < images.length; i++) {
-                for (int j = 0; j < images[0].length; j++) {
-                    for (int k = 0; k < images[0][0].length; k++) {
-                        images[i][j][k] = base_images_path + images[i][j][k];
-                    }
-                }
-            }
             Initalize();
             bar_aval = 1;
         }
@@ -689,6 +682,13 @@ public class FXMLDocumentController implements Initializable {
     }
 
     private void Initalize() {
+        for (int i = 0; i < images.length; i++) {
+            for (int j = 0; j < images[0].length; j++) {
+                for (int k = 0; k < images[0][0].length; k++) {
+                    images[i][j][k] = base_images_path + images[i][j][k];
+                }
+            }
+        }
         ImageView imageView;
         for (int i = 49; i <= 56; i++) {
             imageView = new ImageView(new Image(new File(images[0][0][(i + 1) % 2]).toURI().toString()));
