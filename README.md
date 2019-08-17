@@ -13,6 +13,10 @@ Chess game implemented by Javafx by Amir Muhammad Karimi, Behafarin Emam and Mae
 
 Just clone :)
 
+```
+git clone https://github.com/Behafarin/Chess.git
+```
+
 ## Built With
 
 * [Javafx](https://openjfx.io/) - A software platform for creating and delivering desktop applications
